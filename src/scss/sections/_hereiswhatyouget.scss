@@ -1,0 +1,120 @@
+.here_is_what_youget_tablet{
+  display: none;
+}
+
+.here_is_what_youget {
+  background: #F4F4F4;
+  font-family: $fontPeople;
+}
+.block_picture{
+  margin-left: 50px;
+}
+.blocks{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding-top: 100px;
+  padding-bottom: 35px;
+  padding-left: 90px;
+}
+.image_section:not(:first-child){
+  margin-top: 35px;
+}
+.image_section{
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+}
+.image_icon_create{
+  width: 111px;
+ height: 64px;
+}
+.image_icon_incredibly{
+  width: 90px;
+height: 80px;
+}
+.image_icon_experimental{
+  width: 60px;
+height: 84px;
+}
+.image_icon_clock{
+  width: 71px;
+height: 71px;
+}
+.text_title{
+  font-size: 16px;
+line-height: 21px;
+color: #323232;
+}
+.image_description{
+  font-size: 14px;
+line-height: 21px;
+color: #848E97;
+padding-top: 15px;
+}
+
+.block_picture_title{
+  font-weight: bold;
+font-size: 48px;
+line-height: 50px;
+color: #8D81AC;
+}
+
+.block_picture_title::before{
+  content: "<";
+  font-size: 48px;
+  line-height: 50px;
+  color: #8D81AC;
+}
+.block_picture_title::after{
+  content: ">";
+  font-size: 48px;
+line-height: 50px;
+color: #8D81AC;
+}
+.block_picture_image{
+  background-image: url("../img/here_is/editor.png");
+  max-width: 700px;
+  height: 519px;
+}
+
+@media (max-width: 992px) {
+  .here_is_what_youget_tablet {
+    display: block;
+    background: rgba(0, 0, 0, 0.0001);
+  }
+  .here_is_what_youget{
+    display: none;
+  }
+  .block_picture_title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    color: #8D81AC;
+    text-align: center;
+  }
+  .block_images{
+    margin: 50px 22px 70px 30px;
+  }
+  .image_section{
+    display: grid;
+  }
+}
+
+@media (max-width: 480px){
+  .block_picture_title{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 40px;
+  }
+  .block_picture_title::after,
+  .block_picture_title::before{
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .image_section{
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,187 @@
+
+.fork{
+    @include forkBG;
+    font-family: $fontPeople;
+    color: white;
+    position: relative;
+}
+.fork--h2{
+    padding-top: 83px;
+    text-align: center;
+}
+.fork__table{
+    display: flex;
+    padding: 81px 133px 97px 133px;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+}
+.fork__item{
+    width: 257px;
+    height: 457px;
+    background: #FFFFFF;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.fork__plan{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 97px;
+    text-transform: uppercase;
+    background-color: rgba(253, 252, 252, 0.1);
+}
+.fork__price{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.fork__duration{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.subscription-item-line {
+    background-color: #8d81ac;
+    width: 60px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+.fork__licence{
+    font-size: 16px;
+    line-height: 10px;
+    margin-top: 36px;
+    padding-bottom: 36px;
+
+}
+.fork__licence--margin{
+    padding-bottom: 56px;
+}
+
+.fork__purchase{
+    text-align: center;
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:15.5px 37px 14.5px 37px;
+    color: white;
+
+}
+.fork__super{
+    width: 299px;
+    height: 560px;
+    background: #463048;
+    margin-right: 15px;
+    margin-top: -61px;
+    opacity: 0.84;
+}
+.fork__super-plan{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 97px;
+    text-transform: uppercase;
+    background-color: rgba(50, 28, 72, 0.3);
+}
+.fork__super-price{
+    font-size: 82px;
+    line-height: 90px;;
+    margin-top: 14px;
+}
+.fork__super-duration{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.fork__super-licence{
+    font-size: 16px;
+    line-height: 10px;
+    margin-top: 30px;
+    margin-bottom: 57px;
+}
+.fork__super-purchase{
+    text-align: center;
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:15.5px 37px 14.5px 37px;}
+
+
+    @media (max-width: 992px) {
+        .fork__table {
+            display: grid;
+            
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 40px;
+            padding-bottom: 35px;
+            padding-left: 90px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          
+        }
+        .fork__item {
+            grid-template-columns: 257px 257px;
+            gap: 0 25px;
+            justify-items: end;
+            align-items: center;
+            width: 257px;
+            margin: 0 0 30px 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+
+        }
+        .fork__super{
+            margin: 0 0 45px 0;
+
+        }
+        
+        .fork__table{
+            // padding: 20px 15px 0 15px;
+            justify-content: center;
+            padding-left: 90px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+    }
+
+
+@media (max-width: 480px){
+.fork__table  {
+    grid-template-columns: 100%;
+    gap: 0 5px;
+    justify-items: end;
+    align-items: center;
+    margin: 0 0 0 1px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+   .fork--h2{
+       padding-top: 15px;
+   }
+    .fork__table {
+        
+        justify-content: center;
+        padding: 32px;
+        
+}}
+
+
+

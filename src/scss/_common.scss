@@ -1,0 +1,32 @@
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+@media (max-width: 992px){
+  .container{
+    padding: 0;
+  }
+}
+
+.section-title{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}

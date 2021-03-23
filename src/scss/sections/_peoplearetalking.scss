@@ -1,0 +1,132 @@
+//people talking section
+
+.people-talking {
+  @include peopleTalkingBG;
+  color: white;
+  font-family: $fontPeople;
+  text-align: center;
+  position: relative;
+
+  &_title {
+    padding-top: 110px;
+    padding-bottom: 80px;
+  }
+
+  &_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 85px;
+    grid-row-gap: 100px;
+  }
+
+  &_item_description{
+    font-family: $fontHeader;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &_comment{
+    font-family: $fontHeader;
+    font-size: 14px;
+    line-height: 21px;
+    color: $colorHeader;
+    position: relative;
+    padding-top: 115px;
+    padding-bottom: 26px;
+  }
+}
+
+.people-talking_comment:after{
+  content: '';
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 700px;
+  height: 2px;
+  background: #645766;
+}
+
+.smashing-icon{
+  width: 165px;
+  height: 43px;
+  margin-bottom: 33px;
+}
+.codrops-icon{
+  width: 148px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.w-icon{
+  width: 64px;
+  height: 64px;
+  margin-bottom: 22px;
+}
+.pixel-icon{
+  width: 225px;
+  height: 24px;
+  margin-bottom: 33px;
+}
+.creative-icon {
+  width: 166px;
+  height: 34px;
+  margin-bottom: 28px;
+}
+.tnw-icon{
+  width: 108px;
+  height: 34px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .people-talking_wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+  }
+  .people-talking_item:nth-child(3){
+    margin-top: -30px;
+  }
+  .people-talking_comment{
+    padding: 65px 30px 20px 30px;
+  }
+  .people-talking_comment:after {
+    width: 400px;
+    height: 2px;
+    bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .people-talking {
+
+    &_wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 45px;
+    }
+
+    &_comment:after {
+      width: 245px;
+      height: 2px;
+      bottom: 0;
+    }
+
+    &_comment {
+      padding: 35px 35px 20px 35px;
+    }
+
+    &_item {
+      padding: 0 20px;
+    }
+
+    &_item:nth-child(3) {
+      padding-top: 30px;
+    }
+
+    &_title {
+      padding-top: 57px;
+      padding-bottom: 53px;
+    }
+  }
+}
